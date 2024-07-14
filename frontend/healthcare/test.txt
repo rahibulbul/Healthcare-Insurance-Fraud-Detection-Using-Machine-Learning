@@ -1,0 +1,25 @@
+import React from "react";
+import "./main.css";
+import Header from "./header/Header";
+import About from "./about/About";
+import Services from "./services/Services";
+import GetQuote from "./get-quote/GetQuote";
+import Payment from "./payment/Payment";
+import Shop from "./shop/Shop";
+import Footer from "./footer/Footer";
+
+function Main() {
+  return (
+    <div>
+      <Header />
+      <About />
+      <Services />
+      <GetQuote />
+      <Payment />
+      <Shop />
+      <Footer />
+    </div>
+  );
+}
+
+export default Main;
