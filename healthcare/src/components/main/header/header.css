@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --Poppins: "Poppins", sans-serif;
+    --Montserrat: "Montserrat", sans-serif;
+    --Playwrite: "Playwrite AR", cursive;
+    --Calistoga: "Calistoga", serif;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    padding: 50px 100px;
+    z-index: 100000;
+}
+
+header.sticky {
+    padding: 30px 100px;
+    background: #fff;
+    box-shadow: 0 3.2px 7.2px 0 rgb(0 0 0 / 13%), 0 0.6px 1.8px 0 rgb(0 0 0 / 11%);
+}
+
+header .logo-link {
+    position: relative;
+    font-weight: 800;
+    color: #696969;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    font-family: var(--Calistoga);
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+}
+
+header ul li .nav-link {
+    position: relative;
+    margin: 0 15px;
+    color: #696969;
+    letter-spacing: 2px;
+    font-family: var(--Montserrat);
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: 1rem;
+    padding: 0px 8px;
+    text-transform: uppercase;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    background-color: #696969;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: all 0.5s;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+    background-color: black;
+}
+
+header ul li .nav-link:hover {
+    color: black;
+    font-family: 900;
+}
+
+header .logo-link:hover {
+    color: black;
+}
+
+header ul li .active {
+    color: black;
+}
+
+header ul li .active:after {
+    width: 100%;
+    background-color: black;
+}
