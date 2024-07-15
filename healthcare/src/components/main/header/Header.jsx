@@ -8,15 +8,6 @@ const Header = () => {
     header.classList.toggle("sticky", window.scrollY > 0);
   });
 
-  const navLinkss = document.querySelectorAll(".nav-link");
-
-  navLinkss.forEach((navLinks) => {
-    navLinks.addEventListener("click", () => {
-      document.querySelector(".active")?.classList.remove("active");
-      navLinks.classList.add("active");
-    });
-  });
-
   return (
     <header className="header">
       <Link to="/" className="logo-link">
@@ -24,7 +15,7 @@ const Header = () => {
       </Link>
       <ul>
         <li>
-          <Link to="/" className="nav-link active">
+          <Link to="/" className="nav-link">
             Home
           </Link>
         </li>

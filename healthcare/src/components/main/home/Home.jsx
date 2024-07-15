@@ -3,7 +3,7 @@ import "./home.css";
 
 function Home() {
   return (
-    <div className="container">
+    <div className="container_home">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
         neque a? Quas quo nisi cupiditate alias. Unde reiciendis iusto qui

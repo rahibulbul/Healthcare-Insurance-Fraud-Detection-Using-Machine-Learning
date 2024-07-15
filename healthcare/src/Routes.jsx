@@ -9,6 +9,8 @@ import Shop from "./components/main/shop/Shop";
 import Header from "./components/main/header/Header";
 import Footer from "./components/main/footer/Footer";
 import Login from "./components/main/login/Login";
+import Registration from "./components/main/registration/Registration";
+import Forgot from "./components/main/forgot/Forgot";
 
 const AppRoutes = () => {
   return (
@@ -22,6 +24,8 @@ const AppRoutes = () => {
         <Route path="/payment" element={<Payment />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/forgotpassword" element={<Forgot />} />
       </Routes>
       <Footer />
     </Router>
